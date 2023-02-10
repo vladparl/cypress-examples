@@ -1,0 +1,28 @@
+{
+  "name": "cypress-examples",
+  "version": "1.0.0",
+  "description": "Cypress project examples",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cypress:test": "npx cypress open",
+    "cypress:test:chrome": "cypress run --spec cypress/e2e/ --browser chrome --headed",
+    "cypress:test:cli:headless": "cypress run --spec cypress/e2e/ --browser chrome --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladparl/cypress-examples.git"
+  },
+  "keywords": [],
+  "author": "VladimirP",
+  "license": "No",
+  "bugs": {
+    "url": "https://github.com/vladparl/cypress-examples/issues"
+  },
+  "homepage": "https://github.com/vladparl/cypress-examples#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "dotenv": "^16.0.3",
+    "randomstring": "^1.2.3"
+  }
+}
